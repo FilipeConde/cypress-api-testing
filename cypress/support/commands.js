@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('validarMensagem', (body, mensagem) => {
+    expect(Object.values(body)).to.contain(mensagem)
+})

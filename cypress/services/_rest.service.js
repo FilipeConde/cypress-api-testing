@@ -1,3 +1,5 @@
+// As classes .service devem extender a classe Rest
+
 export default class Rest {
 
 	static get(endpoint) {
